@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header{
+    background-color: #1b3039;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    padding: 5px 10%;
+}
+
+.header .logo .msj{
+    display: inline;
+    text-align: center;
+    justify-content: center;
+    color: aliceblue;
+    margin-bottom: 50%;
+
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2,1.2);
+}
+
+.header .navbar a{
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+}
+
+
+.header .navbar a:hover{
+    color: hsl(47, 100%, 50%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+/* Div de Descripcion */
+.descripcion-estudiante{
+    padding: 20px;
+    height: 210px;
+    width: 260px;
+    text-align: center;
+    justify-content: center;
+    margin: 5px;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #0b496a, #2e7296);
+}
+
+.descripcion-estudiante h3 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.descripcion-estudiante p {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.descripcion-traineer {
+    padding: 20px;
+    height: 210px;
+    width: 260px;
+    text-align: center;
+    justify-content: center;
+    margin: 5px;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #289853, #0f612e);
+}
+
+.descripcion-traineer h3 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.descripcion-traineer p {
+    color: #fff;
+    margin-top: 10px;
+}
+
+
+
+
+.descripcion-junior {
+    padding: 20px;
+    height: 210px;
+    width: 260px;
+    text-align: center;
+    justify-content: center;
+    margin: 5px;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #ff9f43, #ff6b6b);
+}
+
+.descripcion-junior h3 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.descripcion-junior p {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.porcentaje {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+.info-venta{
+   
+    justify-content: center;
+
+    text-align: center;
+}
+
+.info-venta .valor{
+    font-size: 40px;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.input-container-nombre {
+    display: flex;
+    justify-content: center;
+}
+
+.input-container {
+    margin-right: 10px;
+    justify-content: center;
+}
+
+.input-container input[type="text"] {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-container-correo{
+    display: flex;
+    justify-content: center;
+}
+.input-container-correo input[type="mail"] {
+    margin-top: 15px;
+    width: 816px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-container-cc {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    text-align: left;
+}
+
+.input-container label {
+    margin-bottom: 5px;
+}
+
+.input-container input, .input-container select {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-container-total{
+    display: flex;
+    justify-content: center;
+}
+
+.input-container-total input::placeholder{
+    color: aliceblue;
+}
+
+.input-container-total input[type="text"] {
+    color: aliceblue;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    width: 816px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #12608a;
+    text-decoration: none;
+   
+}
+
+.botones-container{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.boton-borrar,
+.boton-resumen {
+    width: 400px;
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.boton-borrar:hover,
+.boton-resumen:hover {
+    background-color: #39843d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 748px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header .logo img {
+        height: 10vh;
+    }
+
+    .header .navbar a {
+        margin: 15px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .descripcion-estudiante,
+    .descripcion-traineer,
+    .descripcion-junior {
+        display: block;
+        width: 100%;
+    }
+
+    .input-container-nombre{
+        display: block;
+    }
+
+    .input-container-nombre .nombre{
+        margin-top: 15px;
+        width: 100%;
+
+    }
+
+
+    .input-container-cc{
+        flex-direction: column;
+    }
+    .input-container-cc .input-container{
+        width: 100%;
+        margin-top: 5px;
+    }
+
+
+    .input-container-correo .correo{
+        flex-direction: column;
+        display: block;
+        width: 100%;
+    }
+
+   
+    
+    .boton-borrar,
+    .boton-resumen {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.title5 {
+    font-size: 24px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-items a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px;
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+    .footer-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footer-items a {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+.footer-items a:hover {
+    color: #0056b3;
+}

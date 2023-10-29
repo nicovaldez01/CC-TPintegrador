@@ -14,15 +14,18 @@
         <!-- Contenedor de Logo -->
             <div class="logo">
                 <img src="codoacodo.png" alt=""><span class="msj"></span>
-            </div>
-
+            </div>   
+            
         <!-- Contenedor de menu de navegacion -->
-        <nav class="navbar">
-                <a href="#">La conferencia</a>
-                <a href="#">Los Oradoresw</a>
-                <a href="#">El lugar y la fecha</a>
-                <a href="#">Conviertete en Orador</a>
-                <a href="#">Comprar tickets</a>
+        <nav class="navbar" id="navbar">
+            <a href="#" class="navbar-item">La conferencia</a>
+            <a href="#" class="navbar-item">Los Oradores</a>
+            <a href="#" class="navbar-item">El lugar y la fecha</a>
+            <a href="#" class="navbar-item">Conviértete en Orador</a>
+            <a href="/comprarTiket.html" class="navbar-item">Comprar tickets</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
 
     </header>
@@ -96,13 +99,13 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam fugiat modi sed porro nulla explicabo officia</p>
             
             <div class="input-container">
-                <input type="text" id="input1" placeholder="Nombre ">
-                <input type="text" id="input2" placeholder="Apellido">
+                <input type="text" id="input1" placeholder="Nombre" required>
+                <input type="text" id="input2" placeholder="Apellido" required>
             </div>
             
-            <textarea id="textbox" placeholder="Sobre que quieres hablar?"></textarea>
+            <textarea id="textbox" placeholder="Sobre que quieres hablar?" required></textarea>
             
-            <button id="boton">Enviar</button>
+            <button id="boton" type="submit">Enviar</button>
         </article>
     </section>
 
