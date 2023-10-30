@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styloTiket.css">
+    <link rel="stylesheet" href="/CC-TPintegrador/styloTiket.css">
     <title>comprarTiket</title>
 </head>
 <body>
@@ -11,7 +11,8 @@
 
         <!-- Contenedor de Logo -->
             <div class="logo">
-                <img src="codoacodo.png" alt=""><span class="msj"></span>
+                <a href="/CC-TPintegrador/index.html"><img src="codoacodo.png" alt=""></a>
+                
             </div>   
             
         <!-- Contenedor de menu de navegacion -->
@@ -20,10 +21,8 @@
             <a href="#" class="navbar-item">Los Oradores</a>
             <a href="#" class="navbar-item">El lugar y la fecha</a>
             <a href="#" class="navbar-item">Conviértete en Orador</a>
-            <a href="/comprarTiket.html" class="navbar-item">Comprar tickets</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+            <a href="#" class="navbar-item">Comprar tickets</a>
+            
         </nav>
 
     </header>
@@ -31,7 +30,6 @@
     <div class="container">
         <div class="descripcion-estudiante">
             <h3>Estudiante</h3>
-            <p>Descripción animada para Estudiante</p>
             <p>Tiene un descuento de</p>
             <p class="porcentaje">80%</p>
             <p>* presentar documentación</p>
@@ -39,14 +37,12 @@
         </div>
         <div class="descripcion-traineer">
             <h3>Trainee</h3>
-            <p>Descripción animada para Trainee</p>
             <p>Tiene un descuento de</p>
             <p class="porcentaje">50%</p>
             <p>* presentar documentación</p>
         </div>
         <div class="descripcion-junior">
             <h3>Junior</h3>
-            <p>Descripción animada para Junior</p>
             <p>Tiene un descuento de</p>
             <p class="porcentaje">15%</p>
             <p>* presentar documentación</p>
@@ -93,8 +89,8 @@
     </form>
 
     <div class="botones-container">
-        <button class="boton-borrar">Borrar</button>
-        <button class="boton-resumen">Resumen</button>
+        <button class="boton-borrar" onclick="limpiarCampos()">Borrar</button>
+        <button class="boton-resumen" onclick="resumen()">Resumen</button>
     </div>
     
     <footer class="footer">
@@ -109,5 +105,6 @@
         </div>
     </footer>
     
+    <script src="/CC-TPintegrador/comprarTiket.js"> </script>
 </body>
 </html>

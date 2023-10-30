@@ -329,7 +329,9 @@
     color: white;
     padding: 30px;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 140px;
+    height: 100%;
+    width: 100%;
 }
 
 .title5 {
@@ -364,5 +366,5 @@
 }
 
 .footer-items a:hover {
-    color: #0056b3;
+    color: #0e6bce;
 }
