@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 
-.header{
+.header {
     background-color: #1b3039;
     display: flex;
     justify-content: space-between;
@@ -14,45 +14,57 @@
     padding: 5px 10%;
 }
 
-.header .logo .msj{
-    display: inline;
-    text-align: center;
-    justify-content: center;
-    color: aliceblue;
-    margin-bottom: 50%;
-
-}
-
-.header .logo{
+.header .logo {
     cursor: pointer;
 }
 
-
-.header .logo img{
-    height: 70px;
+.header .logo img {
+    height: 80px;
     width: auto;
-    justify-content: center;
-    text-align: center;
     transition: all 0.3s;
 }
 
-.header .logo img:hover{
-    transform: scale(1.2,1.2);
+.header .logo img:hover {
+    transform: scale(1.2, 1.2);
 }
 
-.header .navbar a{
+.header .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.header .navbar a {
     text-decoration: none;
     color: white;
     margin-left: 15px;
 }
 
-
-
-
-.header .navbar a:hover{
+.header .navbar a:hover {
     color: hsl(47, 100%, 50%);
 }
 
+@media (max-width: 780px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .header .navbar {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .navbar a{
+      margin-bottom: 10px;
+    }
+    
+
+    .header .logo {
+        margin-bottom: 10px;
+    }
+}
+/*-----------------------------------------------*/
 .seccion-uno .carrucel{
     width: 100%;
     height: auto;
@@ -92,18 +104,6 @@
     50%{margin-left: -200%;}
     100%{margin-left: -200%;}
 
-}
-
-@medua (max-width:991px){
-    
-    body{
-        padding:30px;
-    }
-
-  
-    .carrucel{
-        width:100%;
-    }
 }
 
 
@@ -162,6 +162,71 @@
     transform: scale(1.1);
     filter: grayscale(0) saturate(2);
   }
+
+
+  .box .botonSeccionDosJS {
+    padding: 10px 20px;
+    background-color: #fffb28;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.box .botonSeccionDosR {
+    padding: 10px 20px;
+    background-color: #ec8e12;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilos hover del botón */
+.box .botonSeccionDosJS:hover {
+    background-color: #e2e04e;
+}
+
+.box .botonSeccionDosR:hover {
+    background-color: #cc8b36;
+}
+
+
+.box .botonSeccionDosN {
+    padding: 10px 20px;
+    background-color: #797979;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilos hover del botón */
+.box .botonSeccionDosN:hover {
+    background-color: #444040;
+}
+
+.box .botonSeccionDosS {
+    padding: 10px 20px;
+    background-color: #b90000;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilos hover del botón */
+.box .botonSeccionDosS:hover {
+    background-color: #d83030;
+}
 
 
 
@@ -363,21 +428,26 @@ p {
 }
 
 /* Estilos para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .input-container {
-        flex-direction: column;
-        align-items: center;
+/* Estilos generales */
+.contain {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Estilos responsivos */
+@media only screen and (max-width: 600px) {
+    .contain {
+        display: inline;
+        width: 100%;
+        
     }
 
-    .input-container input,
-    #textbox {
-        width: 100%;
-    }
-
-    #boton {
-        width: 100%;
+    .contain #boton{
+        margin-bottom: 15px;
     }
 }
+
 
 /* Estilos para el footer */
 .footer {
@@ -406,9 +476,9 @@ p {
     margin: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     .footer-items {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
 
