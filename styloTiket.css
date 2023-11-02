@@ -248,15 +248,15 @@
 /* Estilos para dispositivos más pequeños */
 @media (max-width: 768px) {
     .info-venta {
-        padding: 20px; /* Reducción del relleno para dispositivos más pequeños */
+        padding: 20px; 
     }
 
     .imput-correo .correo {
-        width: 100%; /* Ancho del 100% para dispositivos más pequeños */
+        width: 100%;
     }
 
     .input-container {
-        width: 100%; /* Ancho del 100% para dispositivos más pequeños */
+        width: 100%; 
     }
 }
 
