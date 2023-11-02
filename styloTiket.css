@@ -125,8 +125,6 @@
 }
 
 /* INFO VENTA */
-
-
 .info-venta {
     max-width: 800px;
     margin: auto;
@@ -145,29 +143,36 @@
 
 .info-venta .valor {
     text-align: center;
-    color: #6b6b6b;    
+    color: #6b6b6b;
     font-size: 40px;
 }
 
 .input-container {
     margin-bottom: 20px;
-    width: 400px;
+    width: 100%; 
 }
 
-.imput-correo .correo{
+.imput-correo .correo {
     height: 40px;
-    width: 720px;
+    width: 100%; 
     margin-bottom: 15px;
     border-radius: 5px;
-
     font-size: 24px;
     padding-left: 10px;
 }
 
-
 .input-container-nombre {
     display: flex;
     justify-content: space-between;
+}
+
+.input-container-nombre .input-container {
+    width: calc(50% - 5px); 
+}
+
+.input-container-nombre .input-container input {
+    width: 100%; 
+    margin: 0; /
 }
 
 .input-container-cc {
@@ -175,34 +180,19 @@
     justify-content: space-between;
 }
 
+.input-container-cc .input-container {
+    width: calc(50% - 5px); 
+}
+
+.input-container-cc .input-container input {
+    width: 100%; 
+}
+
+
 .input-container label {
     display: block;
     margin-bottom: 10px;
     color: #747474;
-}
-
-.input-container-correo input{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    font-size: 16px;
-    outline: none;
-}
-
-.input-container-total input{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-top: 5px;
-    font-size: 16px;
-    outline: none;
-
 }
 
 .input-container input,
@@ -217,7 +207,28 @@
     outline: none;
 }
 
+.input-container-correo .correo{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-size: 16px;
+    outline: none;
+}
 
+.input-container-total .total{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-size: 16px;
+    outline: none;
+}
 
 .input-container input:focus,
 .input-container select:focus {
@@ -233,6 +244,22 @@
     text-align: center;
     background-color: #1793db;
 }
+
+/* Estilos para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .info-venta {
+        padding: 20px; /* Reducción del relleno para dispositivos más pequeños */
+    }
+
+    .imput-correo .correo {
+        width: 100%; /* Ancho del 100% para dispositivos más pequeños */
+    }
+
+    .input-container {
+        width: 100%; /* Ancho del 100% para dispositivos más pequeños */
+    }
+}
+
 
 
 .botones-container {
