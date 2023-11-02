@@ -230,6 +230,11 @@
     outline: none;
 }
 
+.input-container-correo input:focus {
+    border-color: #4CAF50;
+}
+
+
 .input-container input:focus,
 .input-container select:focus {
     border-color: #4CAF50;
