@@ -3,7 +3,7 @@
     document.getElementById("apellido").value = "";
      document.getElementById("correo").value = "";
     document.getElementById("cantidad").value = "";
-    document.getElementById("categoria").value = "estudiante"; // Establecer la opción predeterminada como "Estudiante"
+    document.getElementById("categoria").value = "estudiante"; 
     document.getElementById("total").value = "";
 }
 
